@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{image.created_at}}{% endblock %}
+{% block main %}
+
+<div class="fun">
+<div class="rt-btn"><a href="/" title="Back" class="red awesome button"><span>Back</span></a></div>
+<div class="clear"></div>
+</div>
+
+<ul id="album">
+    <li>
+        <a  href="/show/{{image.id}}/"><img  alt="{{image.name}}" src="/s/{{image.id}}/"/></a>
+    </li>
+    
+    <li>
+        Most <strong> Similar :</strong>
+    </li>
+        
+     <li>
+        <a  href="/show/{{image.id}}/"><img  alt="{{image.name}}" src="/s/{{image.id}}/"/></a>
+    </li>
+</ul>
+<div class="clear"></div>
+
+{% endblock %}
+
+</body>
+</html>
